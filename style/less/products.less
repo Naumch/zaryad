@@ -1,0 +1,115 @@
+.products {
+  background-color: #F5F5F5;
+  padding-top: 10.3rem;
+  padding-bottom: 3rem;
+  &__inner {
+    position: relative;
+    padding-bottom: 21rem;
+  }
+  &__title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 5.2rem;
+    margin-bottom: 4.3rem;
+  }
+  &__slider {
+    & .slick-track {
+      display: flex;
+      justify-content: space-between;
+    }
+    & .slick-list {
+      overflow: hidden;
+      padding: 0 !important;
+    }
+    & .slick-arrow {
+      position: absolute;
+      top: 0;
+      font-size: 0;
+      width: 7.8rem;
+      height: 5.8rem;
+      &.slick-prev {
+        background-image: url('../../img/products/prev.svg');
+        right: 7.8rem;
+      }
+      &.slick-next {
+        background-image: url('../../img/products/next.svg');
+        right: 0;
+      }
+    }
+    & .slick-slide {
+      & .products__slide-title {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+      }
+      & .products__slide-price {
+        margin-top: 0.8rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 2.2rem;
+      }
+      & .products__slide-bottom {
+        display: flex;
+        margin-top: 2.4rem;
+      }
+      & .products__slide-detail {
+        font-weight: 600;
+        border: 1px solid #333333;
+        margin-left: .8rem;
+        padding: 0 2.4rem;
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 19.5rem;
+        border-radius: 0px 30px 30px 0px;
+        &::after {
+          content: url('../../img/products/more.svg');
+        }
+      }
+    }
+  }
+  &__marquee {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    min-width: 100%;
+    overflow: hidden;
+    padding: 1.8rem 0;
+    &_blue {
+      background-color: #0178F3;
+      color: #F5F5F5;
+      transform: rotate(5deg);
+    }
+    &_border {
+      border-top: 1px solid #333333;
+      border-bottom: 1px solid #333333;
+      transform: rotate(-2.51deg);
+      margin-top: -10rem;
+    }
+    &-menu {
+      display : flex;
+      flex-shrink: 0;
+      align-items: center;
+      animation: slide-left 23s linear infinite;
+      overflow: hidden;
+    }
+    &-item {
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      font-weight: 500;
+      padding: 0 13rem;
+      &_padding_large {
+        padding: 0 18rem;
+      }
+    }
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  } to {
+    transform: translateX(-100%);
+  }
+}

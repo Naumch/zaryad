@@ -1,0 +1,62 @@
+.header {
+  background-color: #131111;
+  color: #7d7d7d;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    &-item {
+      margin-right: 1.9rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__logo {
+    margin-right: 4rem;
+  }
+  &__languages-text {
+    cursor: pointer;
+    &.active {
+      color: #d8d8d8;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    margin-right: 2.4rem;
+    transition: .4s;
+    &:hover {
+      color: #bcbcbc;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__account {
+    margin-right: 2.7rem;
+  }
+  &__busket {
+    border: 1px solid #F5F5F5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    &-img {
+      margin-right: 0.3rem;
+      margin-top: 0.3rem;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.round-button {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &_inline_orange {
+    border: 1px solid #F64F00;
+  }
+  &_white {
+    background-color: #fff;
+  }
+  &__text {
+    text-align: center;
+    &_orange {
+      color: #F64F00;
+    }
+  }
+  &_slider {
+    transform: rotate(15deg);
+    position: absolute;
+    top: -9.1rem;
+    right: -11.2rem;
+  }
+  &_footer {
+    position: absolute;
+    padding: 3rem;
+    right: 0;
+    top: 0;
+  }
+}

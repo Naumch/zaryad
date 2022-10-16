@@ -1,0 +1,74 @@
+.sale {
+  padding-top: 11.7rem;
+  padding-bottom: 22rem;
+  position: relative;
+  &__img-player {
+    position: absolute;
+    right: 0;
+    top: 7rem;
+  }
+  &__title {
+    font-size: 9rem;
+    font-weight: 700;
+    line-height: 10.4rem;
+    color: #131111;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #BCBCBC;
+    max-width: 66rem;
+    position: relative;
+    margin-bottom: 4rem;
+    &_star_after {
+      &::after {
+        content: url('../../img/sale/star.svg');
+      }
+    }
+    &_sale_before {
+      &::before {
+        content: url('../../img/sale/sale.svg');
+        margin-right: 2rem;
+      }
+    }
+    &-blur {
+      display: inline-block;
+      position: absolute;
+      &_blue {
+        width: 10.5rem;
+        height: 10.5rem;
+        background: radial-gradient(50% 50% at 50% 50%, #0178F3 0%, rgba(1, 120, 243, 0) 100%);
+        filter: blur(32px);
+        right: 25rem;
+      }
+      &_orange {
+        width: 9rem;
+        height: 9rem;
+        background: radial-gradient(50% 50% at 50% 50%, #F64F00 0%, rgba(246, 79, 0, 0) 100%);
+        filter: blur(32px);
+        left: -2rem;
+        top: 11rem;
+      }
+    }
+    &-rub {
+      color: #F5F5F5;
+      -webkit-text-stroke-width: 0px;
+    }
+  }
+  &__subtitle {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #BCBCBC;
+    max-width: 49rem;
+    margin-bottom: 2.2rem;
+  }
+  &__input {
+    background: transparent;
+    border: none;
+    padding: 1rem 0;
+    border-bottom: 1px solid #7D7D7D;
+    margin-bottom: 5.6rem;
+    width: 44.5rem;
+    &:focus {
+      outline: none;
+      color: #BCBCBC;
+    }
+  }
+}
