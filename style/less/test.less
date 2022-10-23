@@ -1,0 +1,57 @@
+.test {
+  padding-top: 10rem;
+  text-align: center;
+  &__title {
+    color: #f5f5f5;
+    font-size: 4.8rem;
+    line-height: 5.2rem;
+    font-weight: 700;
+    max-width: 65rem;
+    margin: 0 auto 2.4rem;
+  }
+  &__subtitle {
+    color: #d8d8d8;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+  }
+  &__content {
+    position: relative;
+    background-image: url('../../img/test/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center top 25.3rem;
+    &::before {
+      content: '';
+      width: 52.4rem;
+      height: 52.4rem;
+      background: radial-gradient(50% 50% at 50% 50%, #0178F3 0%, rgba(1, 120, 243, 0) 100%);
+      filter: blur(68px);
+      position: absolute;
+      top: 22.3rem;
+      right: -16.8rem;
+      z-index: -10;
+    }
+    &::after {
+      content: '';
+      width: 56.8rem;
+      height: 56.8rem;
+      background: radial-gradient(50% 50% at 50% 50%, #F64F00 0%, rgba(246, 79, 0, 0) 100%);
+      filter: blur(57px);
+      position: absolute;
+      top: 2.3rem;
+      left: 2.6rem;
+      z-index: -10;
+    }
+  }
+  &__logo {
+    position: absolute;
+    top: 25.3rem;
+    left: 0;
+    z-index: 5;
+  }
+  &__img {
+    margin-left: -9rem;
+    margin-top: 5.5rem;
+    z-index: 10;
+  }
+}
